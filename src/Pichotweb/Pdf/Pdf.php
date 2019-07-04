@@ -17,9 +17,9 @@ class Pdf {
 			}
 		}
 
-		require_once 'dompdf/dompdf_config.inc.php';
+		require_once 'dompdf/autoload.inc.php';
 
-		$this->dompdf = new \DOMPDF();
+		$this->dompdf = new \Dompdf\Dompdf();
 	}
 
 	public function load($html, $size = 'A4', $orientation = 'portrait'){
@@ -62,7 +62,7 @@ class Pdf {
 	}
 
 	public function clear(){
-		\Image_Cache::clear();
+		\Dompdf\Image\Cache::clear();
 		return true;
 	}
 }
