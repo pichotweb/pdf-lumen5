@@ -1,3 +1,7 @@
+#Updates in progress
+
+Right now I'm tracking version compatibility and as long as possible I'll update this page to inform compatible versions.
+
 # Dompdf
 
 Compatibility fork of k98jurz/pdf-lumen that is a conversion of Thujohn/Pdf for Laravel Lumen 5.*
@@ -5,19 +9,19 @@ Simple Dompdf wrapper package (uses Dompdf stable version 0.5)
 
 ## Installation Lumen >= 5.4.*
 
-Add `tibonilab/pdf-lumen-bundle` to `composer.json`.
+Add `pichoweb/pdf-lumen-bundle` to `composer.json`.
 
 ```
-"tibonilab/pdf-lumen-bundle": "2.0.0"
+"pichoweb/pdf-lumen-bundle": "2.0.0"
 ```
 
 
 ## Installation Lumen <= 5.3.*
 
-Add `tibonilab/pdf-lumen-bundle` to `composer.json`.
+Add `pichoweb/pdf-lumen-bundle` to `composer.json`.
 
 ```
-"tibonilab/pdf-lumen-bundle": "1.0.0"
+"pichoweb/pdf-lumen-bundle": "1.0.0"
 ```
 
 
@@ -25,12 +29,12 @@ After require right version tag for your Lumen installation run `composer update
 
 Open up `bootstrap/app.php` and add the service provider.
 ```php
-	$app->register('tibonilab\Pdf\PdfServiceProvider');
+	$app->register('pichoweb\Pdf\PdfServiceProvider');
 ```
 
 And add the alias.
 ```php
-    class_alias('tibonilab\Pdf\PdfFacade', 'PDF');
+    class_alias('pichoweb\Pdf\PdfFacade', 'PDF');
 ```
 
 
