@@ -1,8 +1,9 @@
-<?php namespace pichotweb\Pdf;
+<?php namespace Pichotweb\Pdf;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Support\DeferrableProvider;
 
-class PdfServiceProvider extends ServiceProvider {
+class PdfServiceProvider extends ServiceProvider implements DeferrableProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -18,8 +19,7 @@ class PdfServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['pdf'] = $this->app->singleton(function($app)
-		{
+		$this->app->singleton('pdf', function($app) {
 			return new Pdf;
 		});
 	}
@@ -31,7 +31,7 @@ class PdfServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('pdf');
+		return ['pdf'];
 	}
 
 }

@@ -1,4 +1,4 @@
-<?php namespace pichotweb\Pdf;
+<?php namespace Pichotweb\Pdf;
 
 use Illuminate\Http\Response;
 
