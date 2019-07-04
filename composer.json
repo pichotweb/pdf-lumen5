@@ -1,16 +1,16 @@
 {
-    "name": "tibonilab/pdf-lumen-bundle",
-    "description": "compatibility fork of k98kurz/pdf (dompdf wrapper) for Laravel Lumen",
+    "name": "pichotweb/pdf-lumen5",
+    "description": "fork from  tibonilab/pdf-lumen-bundle to keep compatibility with php 7.3",
     "keywords": ["pdf", "dompdf", "laravel", "lumen"],
     "license": "MIT",
     "authors": [
         {
-            "name": "tibonilab",
-            "email": "info@tibonilab.com"
+            "name": "Pichot",
+            "email": "pichotweb@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=7.3.0"
     },
     "autoload": {
         "psr-0": {
