@@ -4,7 +4,7 @@ Right now I'm tracking version compatibility and as long as possible I'll update
 
 # Dompdf
 
-Compatibility of tibonilab/pdf-lumen-bundle that is a compatibility fork of k98jurz/pdf-lumen that is a conversion of Thujohn/Pdf for Laravel Lumen 5.* :3
+Compatibility of tibonilab/pdf-lumen-bundle that is a compatibility fork of k98jurz/pdf-lumen that is a conversion of Thujohn/Pdf for Laravel Lumen 5.*  :3
 
 Simple Dompdf wrapper package (uses Dompdf stable version 0.8.*)
 
