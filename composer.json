@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "tibonilab\\Pdf": "src/"
+            "pichotweb\\Pdf": "src/"
         }
     },
     "minimum-stability":"dev"
