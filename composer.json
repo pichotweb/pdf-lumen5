@@ -13,8 +13,11 @@
         "php": ">=7.3.0"
     },
     "autoload": {
+        "classmap": [
+          "src/Pichotweb/Pdf"
+        ],
         "psr-4": {
-            "pichotweb\\Pdf\\": "src/"
+            "Pichotweb\\Pdf\\": "src"
         }
     },
     "minimum-stability":"dev"
