@@ -1,6 +1,6 @@
 {
     "name": "pichotweb/pdf-lumen5",
-    "description": "fork from  pichotweb/pdf-lumen-bundle to keep compatibility with php 7.3",
+    "description": "fork from  tibonilab/pdf-lumen-bundle to keep compatibility with php 7.3",
     "keywords": ["pdf", "dompdf", "laravel", "lumen"],
     "license": "MIT",
     "authors": [
