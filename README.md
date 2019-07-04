@@ -4,8 +4,18 @@ Right now I'm tracking version compatibility and as long as possible I'll update
 
 # Dompdf
 
-Compatibility fork of k98jurz/pdf-lumen that is a conversion of Thujohn/Pdf for Laravel Lumen 5.*
-Simple Dompdf wrapper package (uses Dompdf stable version 0.5)
+Compatibility of tibonilab/pdf-lumen-bundle that is a compatibility fork of k98jurz/pdf-lumen that is a conversion of Thujohn/Pdf for Laravel Lumen 5.* :3
+
+Simple Dompdf wrapper package (uses Dompdf stable version 0.8.*)
+
+
+## Installation Lumen >= 5.8.*
+
+Add `pichoweb/pdf-lumen-bundle` to `composer.json`.
+
+```
+"pichoweb/pdf-lumen-bundle": "^3.0"
+```
 
 ## Installation Lumen >= 5.4.*
 
@@ -15,7 +25,6 @@ Add `pichoweb/pdf-lumen-bundle` to `composer.json`.
 "pichoweb/pdf-lumen-bundle": "2.0.0"
 ```
 
-
 ## Installation Lumen <= 5.3.*
 
 Add `pichoweb/pdf-lumen-bundle` to `composer.json`.
@@ -23,7 +32,6 @@ Add `pichoweb/pdf-lumen-bundle` to `composer.json`.
 ```
 "pichoweb/pdf-lumen-bundle": "1.0.0"
 ```
-
 
 After require right version tag for your Lumen installation run `composer update` to pull down the latest version of Pdf.
 
