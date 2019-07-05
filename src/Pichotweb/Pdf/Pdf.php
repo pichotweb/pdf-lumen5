@@ -17,6 +17,7 @@ class Pdf {
 			}
 		}
 
+		//TODO - remove project download and versionate it!
 		require_once 'dompdf/autoload.inc.php';
 
 		$this->dompdf = new \Dompdf\Dompdf();
