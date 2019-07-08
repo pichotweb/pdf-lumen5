@@ -45,16 +45,17 @@ class Pdf {
 	public function show($filename = 'dompdf_out', $options = array('compress' => 1, 'Attachment' => 0)){
 		$this->render();
 		$this->clear();
-		return $this->dompdf->stream($filename.'.pdf', $options);
+		// return $this->dompdf->stream($filename.'.pdf', $options);
+
+		return response($this->dompdf->stream($filename.'.pdf', $options))
+							->header('Content-Type', 'application/pdf');
 	}
 
 	public function download($filename = 'dompdf_out', $options = array('compress' => 1, 'Attachment' => 1)){
 		$this->render();
 		$this->clear();
-		return new Response($this->dompdf->stream($filename.'.pdf', $options), 200, array(
-                    'Content-Type' => 'application/pdf',
-                    'Content-Disposition' =>  'attachment; filename="'.$filename.'"'
-                ));
+		return response($this->dompdf->stream($filename.'.pdf', $options))
+							->header('Content-Type', 'application/pdf');
 	}
 
 	public function output($options = array('compress' => 1)){
